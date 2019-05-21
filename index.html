@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Five Number Summary Project</title>
+  <style></style>
+  <link href="css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+<div class="content">
+<div id="myProgress" class=" hidden">
+  <div id="myBar" class="progress-bar progress-bar-striped active">Working</div>
+</div>
+<br>
+	
+	<form class="form-horizontal">
+
+	<h4 class="text-center text-capitalize" style="margin-top: 25px;">
+		Finding mean , median , mode , variance ,standard diviation , five number summary
+	</h4>
+  
+<!--   input-->
+   <div class="form-group">
+    <label for="input" class="col-sm-3 control-label">Enter numbers</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="input"  placeholder="insert numbers must be seperated with ',' like 10,11,17" required>
+    </div>
+  </div>
+  
+  
+  
+<!--  results-->
+ <div class="results hidden">
+ 	
+ <h4 class="text-center text-success text-uppercase">Results</h4>
+<!-- mean -->
+ <div class="form-group">
+    <label for="input" class="col-sm-3 control-label">Mean</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="mean" readonly>
+    </div>
+  </div>
+  
+  
+  <!-- median -->
+ <div class="form-group">
+    <label for="input" class="col-sm-3 control-label">Median</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="median" readonly>
+    </div>
+  </div>
+  
+  
+  <!-- mode -->
+ <div class="form-group">
+    <label for="input" class="col-sm-3 control-label">Mode</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="mode" readonly>
+    </div>
+  </div>
+  
+  
+  <!-- Variance -->
+ <div class="form-group">
+    <label for="input" class="col-sm-3 control-label">Variance</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="variance" readonly>
+    </div>
+  </div>
+  
+  
+  <!-- standard diviation -->
+ <div class="form-group">
+    <label for="input" class="col-sm-3 control-label">Standard Diviation</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="standard_diviation" readonly>
+    </div>
+  </div>
+  
+   <h4 class="text-center text-success text-uppercase">Five numbera summary</h4>
+
+  <!-- Five number summary -->
+ <div class="form-group">
+    <label for="input" class="col-sm-3 control-label">Minimum</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="min" readonly>
+    </div>
+  </div>
+  
+   <div class="form-group">
+    <label for="input" class="col-sm-3 control-label">Q1</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="q1" readonly>
+    </div>
+  </div>
+  
+  
+   <div class="form-group">
+    <label for="input" class="col-sm-3 control-label">Q2 median</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="q2" readonly>
+    </div>
+  </div>
+  
+   <div class="form-group">
+    <label for="input" class="col-sm-3 control-label">Q3</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="q3" readonly>
+    </div>
+  </div>
+  
+   <div class="form-group">
+    <label for="input" class="col-sm-3 control-label">Max</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="max" readonly>
+    </div>
+  </div>
+ </div>
+  
+  
+  
+<!--  buttons-->
+ 
+   <div class="form-group buttons">
+    <label for="input" class="col-sm-3 control-label"></label>
+    <div class="col-sm-9">
+      <button type="reset" id="reset" class="btn btn-danger">Reset</button>
+	<button type="button" id="result" class="btn btn-primary">Get Results</button>
+    </div>
+
+  </div>
+  this project was made by: <a href="https://www.facebook.com/Mhmod.Hsn55">Mahmoud Hassan</a> and available only for educational purposes
+  
+</form>
+
+
+	</div>
+
+<!--modal -->
+
+<div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"><span class=" 
+glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+ Error</h4>
+      </div>
+      <div class="modal-body">
+        <p>Error in data intry</p>
+        <p>Insert data in the following form </p>
+        <p>1,2,3,4,5,6,7,8,9,10,11,12</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+
+	<!-- <script src="jquery-3.1.1.js"></script> -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- <script src="js/bootstrap.js"></script> -->
+    <script src="js/bootstrap-3.3.7.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
