@@ -1,10 +1,16 @@
-# KNN
-K Nearest Neighbour algorithm project
-
+# Five Number Summary
 > This project was made for datamining subject, and available only for educational purposes  
 
 ### What it do
-insert each group as `[1,2],[2,3],[3,1]` then it'll give you the best matching class, it supports only two classes
+insert your numbers as `65,25,85,63,25,4,2,3,89,2,5,8,6` then it'll give you the results,
+
+### Results
+* Mean
+* Median
+* Mode
+* Variance
+* Standard Diviation
+* Five Number Summary (Minimum, Q1, Median Q2, Q3, Max )
 
 ### Screenshot
 ![Screenshot](https://raw.githubusercontent.com/Mhmod-Hsn/KNN/master/screenshot.jpg)
